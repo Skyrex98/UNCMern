@@ -1,0 +1,20 @@
+{
+  "name": "Map PWA",
+  "short_name": "Map PWA",
+  "start_url": ".",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "assets/images/logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ] 
+}

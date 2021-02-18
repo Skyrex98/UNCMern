@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Window Scope</title>
+  </head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
+
+    <script>
+      // var food = 'Pizza';
+      // var drink = 'Water';
+
+      // function thirdFunction(drink) {
+      //   var food = 'Steak';
+      //   // Variable "food" is global and is available to this function
+      //   console.log(food);
+
+      //   // Variable "drink" is also global but was "shadowed" by our parameter
+      //   console.log(drink);
+      // }
+
+      // thirdFunction('Orange Juice');
+      // console.log('food down here one', food);
+      // food = 'shrimp';
+      // console.log('food down here two', food);
+
+      var instructors = ['noah', 'aly', 'tom', 'jessie'];
+
+      for (var i = 0; i < instructors.length; i++) {
+        var test = 'testing';
+      }
+      console.log(instructors[i]);
+    </script>
+  </body>
+</html>

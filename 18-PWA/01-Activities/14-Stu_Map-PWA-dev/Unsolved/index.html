@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#009578" />
+    <title>Map PWA</title>
+    <!-- TODO add manifest.json link -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="apple-touch-icon" href="./assets/images/logo128.png" />
+  </head>
+  <body>
+    <p>Trip Scheduler</p>
+    <img class="map" src="./assets/images/map.jpg" alt="map of Berlin">
+    <script src="./service-worker.js"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('service-worker.js')
+          .then((registration) => {
+            console.log('Service Worker Registered!');
+            console.log(registration);
+          })
+          .catch((error) => {
+            console.log('Service Worker Registration Failed!');
+            console.log(error);
+          });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+p {
+    text-align: center;
+}
+.box-set {
+    position: relative;
+    height: 400px;
+    background: darkgray;
+}

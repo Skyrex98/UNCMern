@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
+    <script>
+      var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
+
+      for (var i = 0; i < myFarm.length; i++) {
+        var firstLetter = myFarm[i][0];
+        var acceptableLetters = ['c', 'o'];
+
+        if (acceptableLetters.includes(firstLetter)) {
+          console.log('it worked', myFarm[i]);
+        }
+
+        if (myFarm[i][0] === 'c' || myFarm[i][0] === 'o') {
+          alert('starts with c or o');
+        }
+
+        if (myFarm[j].charAt(0) === 'c' || myFarm[j].charAt(0) === 'o') {
+          alert('Starts with a c or an o!');
+        }
+      }
+    </script>
+  </body>
+</html>
